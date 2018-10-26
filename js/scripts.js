@@ -21,6 +21,7 @@ var beepboop = function(num, name) {
 
 // User Interface Logic
 $(document).ready(function() {
+  
   $(".inputForm").submit(function(event) {
     event.preventDefault();
     var numInput = parseInt($("#numberInput").val());
