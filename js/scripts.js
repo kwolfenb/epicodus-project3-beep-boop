@@ -7,10 +7,10 @@ var beepboop = function(num) {
       numStr = "I'm sorry, Dave. I'm afraid I can't do that.";
     }
     else if (numStr.includes("1")) {
-      numStr = "Boop!";
+      numStr = '"Boop!"';
     }
     else if (numStr.includes("0")) {
-      numStr = "Beep!";
+      numStr = '"Beep!"';
     }
     console.log(numStr);
     arrResults.push(numStr);
@@ -28,6 +28,7 @@ $(document).ready(function() {
     var result = beepboop(input);
     $("#resultList").empty();
     $("#resultOutput").show();
+    $("#resetButton").show();
     $("#spanNumber").text(input);
     $("#resultList").append(result.map(x => "<li>" + x + "</li>"));
 
