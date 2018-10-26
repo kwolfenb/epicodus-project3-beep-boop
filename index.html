@@ -5,9 +5,22 @@
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css"  rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Beep Boop</title>
   </head>
   <body>
-
+    <div class="container">
+      <form class="inputForm">
+        <div class="form-group">
+          <label for="numberInput">Input Number Here:</label>
+          <input type="text" class="form-control" id="numberInput">
+        </div>
+        <button type="submit" class="btn btn-outline-primary btn-lg">See Results</button>
+      </form>
+      <div id="resultOutput">
+        <h4>Here is your result</h4>
+          <ul id="resultList">
+          </ul>
+      </div>
+    </div>
   </body>
 </html>

@@ -11,7 +11,7 @@ This website takes a number input by a user and returns a list of numbers from 0
 ### Specifications
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **List numbers from 0 to User Input, separated by commas** | 9 | 0,1,2,3,4,5,6,7,8,9 |
+| **Output should list numbers from 0 to User Input** | 9 | 0,1,2,3,4,5,6,7,8,9 |
 | **Rule 1: If number contains "0", all digits are replaced with "Beep!". **| 20 | ["Beep!"] |
 | **Rule 2: If number contains "1", replace all digits with "Boop!"**| 19 | ["Boop!"] |
 | **Rule 3: Numbers divisible by 3 are replaced with phrase. ** | 3 | "I'm sorry, Dave. I'm afraid I can't do that." |
