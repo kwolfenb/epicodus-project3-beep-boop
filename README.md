@@ -1,4 +1,4 @@
-# _Webpage Name_
+# _Beep-Boop Counter_
 
 #### _Week 3 Independent Project: "Beep-Boop", 10.26.2018_
 
@@ -11,14 +11,14 @@ This website takes a number input by a user and returns a list of numbers from 0
 ### Specifications
 | Spec | Input Example | Output Example |
 | :-------------     | :------------- | :------------- |
-| **Output should list numbers from 0 to User Input** | 9 | 0,1,2,3,4,5,6,7,8,9 |
-| **Rule 1: If number contains "0", all digits are replaced with "Beep!". **| 20 | ["Beep!"] |
-| **Rule 2: If number contains "1", replace all digits with "Boop!"**| 19 | ["Boop!"] |
-| **Rule 3: Numbers divisible by 3 are replaced with phrase. ** | 3 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| **Rule 2 takes precedence over Rule 1.**| 10 | ["Boop!"] |
-| **Rule 3 takes precedence over Rule 1.**| 30 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| **Rule 3 takes precedence over Rule 2.**| 15 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| **User should be able to enter new number and see new results.**| Input "3", Submit, then input "4". | Clear results from "3", then return results for "4". |
+| Output should list numbers from 0 to User Input | 9 | 0,1,2,3,4,5,6,7,8,9 |
+| Rule 1: If number contains "0", all digits are replaced with "Beep!". | 20 | ["Beep!"] |
+| Rule 2: If number contains "1", replace all digits with "Boop!"| 19 | ["Boop!"] |
+| Rule 3: Numbers divisible by 3 are replaced with phrase.  | 3 | "I'm sorry, Dave. I'm afraid I can't do that." |
+| Rule 2 takes precedence over Rule 1.| 10 | ["Boop!"] |
+| Rule 3 takes precedence over Rule 1.| 30 | "I'm sorry, Dave. I'm afraid I can't do that." |
+| Rule 3 takes precedence over Rule 2.| 15 | "I'm sorry, Dave. I'm afraid I can't do that." |
+| User should be able to enter new number and see new results.| Input "3", Submit, then input "4". | Clear results from "3", then return results for "4". |
 
 
 

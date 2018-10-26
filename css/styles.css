@@ -3,10 +3,9 @@
   margin-left: 25px; */
   margin-bottom: 15px;
   border-radius: 4px;
-  width: 60%;
 }
 input:invalid {
-  border: 2px dashed red;
+  border: 1px dashed red;
   background-color: #f9f9f9;
 }
 input:valid {
@@ -15,17 +14,19 @@ input:valid {
 #submitButton {
   width: 35%;
   margin-right: 2%;
+  margin-top: 5%;
 }
 #resetButton {
   display: none;
   width: 20%;
+  margin-top: 5%;
 }
 #resultOutput {
   margin: 5%;
   display: none;
 }
 form {
-  width: 50%;
+  width: 75%;
 }
 ul {
   list-style: none;

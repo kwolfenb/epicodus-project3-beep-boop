@@ -14,15 +14,21 @@
         <p>Beep! Boop! I am a robot. Give me a number and I will show you my counting skills.</p>
       </div>
       <form class="inputForm">
-        <div class="form-group">
-          <label for="numberInput">Tell me your number:</label><br>
-          <input type="text" id="numberInput" required pattern=[0-9]+>
+        <div class="row">
+          <div class="col">
+            <label for="numberInput">Please give me a number.</label><br>
+            <input type="text" class="form-control" id="numberInput" required pattern=[0-9]+>
+          </div>
+          <div class="col">
+            <label for="nameInput">What is your name?</label><br>
+            <input type="text" class="form-control" id="nameInput" value="Dave">
+          </div>
         </div>
         <button type="submit" class="btn btn-outline-primary btn-lg" id="submitButton">Submit</button>
         <button type="button" class="btn btn-outline-warning btn-lg" onClick="window.location.reload()" id="resetButton">Reset</button>
       </form>
       <div id="resultOutput">
-        <h6>I will now count to <span id="spanNumber"></span>! </h6>
+        <h6>Okay <span id="spanName"></span>. I will now count to <span id="spanNumber"></span>. </h6>
         <p>Remember, as a robot I <em>always</em> start with "0". That is the robot way.</p>
           <ul id="resultList">
           </ul>
