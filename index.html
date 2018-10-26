@@ -9,16 +9,22 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h3 class="display-4">Greetings, human.</h3>
+        <p>Beep! Boop! I am a robot. Give me a number and I will show you my counting skills.</p>
+      </div>
       <form class="inputForm">
         <div class="form-group">
-          <label for="numberInput">Input Number Here:</label>
-          <input type="text" class="form-control" id="numberInput">
+          <label for="numberInput">Tell me your number:</label>
+          <input type="text" id="numberInput" required pattern=[0-9]>
         </div>
-        <button type="submit" class="btn btn-outline-primary btn-lg">See Results</button>
+        <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
       </form>
       <div id="resultOutput">
-        <h4>Here is your result</h4>
-          <p id="resultList"></p>
+        <h4>I will now count to <span id="spanNumber"></span>: </h4>
+        <h6>Remember, as a robot I <em>always</em> start with "0". That is the robot way.</h6>
+          <ul id="resultList">
+          </ul>
       </div>
     </div>
   </body>

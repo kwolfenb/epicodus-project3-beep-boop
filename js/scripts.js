@@ -1,6 +1,6 @@
 // Business Logic
-var arrResults = [];
 var beepboop = function(num) {
+  var arrResults = [];
   for (number=0 ; number <= num ; number++) {
     var numStr = number.toString();
     if (parseInt(numStr)%3===0 && numStr !=="0") {
@@ -28,7 +28,8 @@ $(document).ready(function() {
     var result = beepboop(input);
     $("#resultList").empty();
     $("#resultOutput").show();
-    $("#resultList").append(result.toString().replace(/,/g, '<br>'));
+    $("#spanNumber").text(input);
+    $("#resultList").append(result.map(x => "<li>" + x + "</li>"));
 
   });
 

@@ -1,6 +1,23 @@
 body {
   background-color: ;
 }
-.resultOutput {
+#numberInput {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+input:invalid {
+  border: 2px dashed red;
+  background-color: #f9f9f9;
+}
+input:valid {
+  border: 2px solid green;
+  background-color: #effff2;
+}
+#resultOutput {
   display: none;
+}
+
+form {
+  width: 50%;
 }
