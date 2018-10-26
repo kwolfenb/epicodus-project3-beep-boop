@@ -14,7 +14,8 @@ var beepboop = function(num) {
     console.log(numStr);
     arr.push(numStr);
   };
-  console.log(arr);
+  console.log(arr.join(',').replace(/,/g, '<br>'));
+  return arr.join(',').replace(/,/g, '<br>');
 
 };
 
@@ -26,7 +27,7 @@ $(document).ready(function() {
     var input = parseInt($("#numberInput").val());
     var result = beepboop(input);
     $("#resultOutput").show();
-    $("#resultList").text(arr.toString());
+    $("#resultList").text(result);
 
   });
 
