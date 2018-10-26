@@ -1,5 +1,5 @@
 // Business Logic
-var arr = [];
+var arrResults = [];
 var beepboop = function(num) {
   for (number=0 ; number <= num ; number++) {
     var numStr = number.toString();
@@ -8,26 +8,27 @@ var beepboop = function(num) {
     }
     else if (numStr.includes("1")) {
       numStr = "Boop!";
-    } else if (numStr.includes("0")) {
+    }
+    else if (numStr.includes("0")) {
       numStr = "Beep!";
     }
     console.log(numStr);
-    arr.push(numStr);
+    arrResults.push(numStr);
   };
-  console.log(arr.join(',').replace(/,/g, '<br>'));
-  return arr.join(',').replace(/,/g, '<br>');
-
+  return(arrResults);
 };
+
 
 // User Interface Logic
 $(document).ready(function() {
   $(".inputForm").submit(function(event) {
     event.preventDefault();
-    $("#resultList").empty();
+
     var input = parseInt($("#numberInput").val());
     var result = beepboop(input);
+    $("#resultList").empty();
     $("#resultOutput").show();
-    $("#resultList").text(result);
+    $("#resultList").append(result.toString().replace(/,/g, '<br>'));
 
   });
 
