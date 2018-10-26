@@ -19,6 +19,7 @@ This website takes a number input by a user and returns a list of numbers from 0
 | Rule 3 takes precedence over Rule 1.| 30 | "I'm sorry, Dave. I'm afraid I can't do that." |
 | Rule 3 takes precedence over Rule 2.| 15 | "I'm sorry, Dave. I'm afraid I can't do that." |
 | User should be able to enter new number and see new results.| Input "3", submit, then input "4". | Clear results from "3", then return results for "4". |
+| Clicking the "Count Backward??" button will return the same results in reverse order.| 2 | 2, 'Boop!, 'Beep!' |
 
 
 
@@ -26,7 +27,7 @@ This website takes a number input by a user and returns a list of numbers from 0
 
 * _Clone this repository on GitHub_
 * _Open the index.html file in a web browser to view the webpage_
-* _In the webpage, enter numbers into the entry form and click "Submit" to see the results._
+* _In the webpage, enter numbers into the entry form and click "Count" or "Count Backward??" to see the results._
 * _Open index.html and scripts.js files using text editor (such as Atom) to view the code_
 
 ## Known Bugs
