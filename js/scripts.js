@@ -1,14 +1,19 @@
+// Business Logic
 var beepboop = function(num) {
 var arr = [];
 for (number=0 ; number <= num ; number++) {
-  console.log(number);
-  arr.push(number);
-  if ()
+  var numStr = number.toString();
+  if (numStr.includes("1")) {
+    numStr= "Boop!";
+  } else if (numStr.includes("0")) {
+    numStr = "Beep!";
+  }
+  console.log(numStr);
 
 };
 };
 
-
+// User Interface Logic
 $(document).ready(function() {
   $(".inputForm").submit(function(event) {
     event.preventDefault();
