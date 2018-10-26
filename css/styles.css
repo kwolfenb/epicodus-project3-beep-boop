@@ -11,22 +11,24 @@ input:invalid {
 input:valid {
   border: 1px solid lightblue;
 }
-#submitButton {
-  width: 35%;
-  margin-right: 2%;
+#submitButton,#backwardButton, #resetButton {
+  margin-right: 1%;
   margin-top: 5%;
+  width: 90%;
 }
 #resetButton {
   display: none;
-  width: 20%;
-  margin-top: 5%;
 }
 #resultOutput {
   margin: 5%;
   display: none;
 }
+#resultBackward {
+  margin: 5%;
+  display: none;
+}
 form {
-  width: 75%;
+  width: 85%;
 }
 ul {
   list-style: none;

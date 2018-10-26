@@ -15,22 +15,39 @@
       </div>
       <form class="inputForm">
         <div class="row">
-          <div class="col">
+          <div class="col"->
             <label for="numberInput">Please give me a number.</label><br>
-            <input type="text" class="form-control" id="numberInput" required pattern=[0-9]+>
+            <input type="text" class="form-control" id="numberInput" required pattern=[0-9]+ value=0>
           </div>
           <div class="col">
             <label for="nameInput">What is your name?</label><br>
             <input type="text" class="form-control" id="nameInput" value="Dave">
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-primary btn-lg" id="submitButton">Submit</button>
-        <button type="button" class="btn btn-outline-warning btn-lg" onClick="window.location.reload()" id="resetButton">Reset</button>
+        <div class="row">
+          <div class="col-md">
+            <button type="submit" class="btn btn-outline-primary btn-lg" id="submitButton">Count</button>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-danger btn-lg" id="backwardButton">Count Backward??</button>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-warning btn-lg" onClick="window.location.reload()" id="resetButton">Reset</button>
+          </div>
+        </div>
       </form>
+
+
       <div id="resultOutput">
-        <h6>Okay <span id="spanName"></span>. I will now count to <span id="spanNumber"></span>. </h6>
-        <p>Remember, as a robot I <em>always</em> start with "0". That is the robot way.</p>
-          <ul id="resultList">
+        <h6>Okay <span class="spanName"></span>. I will now count to <span class="spanNumber"></span>. </h6>
+        <h6>Remember, as a robot I <em>always</em> start with "0". That is the robot way.</h6>
+          <ul class="resultList">
+          </ul>
+      </div>
+      <div id="resultBackward">
+        <h6>Okay <span class="spanName"></span>. I will now count backward from <span class="spanNumber"></span> down to 0. </h6>
+        <h6>Remember, as a robot I <em>always</em> include the number "0". That is the robot way.</h6>
+          <ul class="resultList">
           </ul>
       </div>
     </div>

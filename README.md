@@ -18,7 +18,7 @@ This website takes a number input by a user and returns a list of numbers from 0
 | Rule 2 takes precedence over Rule 1.| 10 | ["Boop!"] |
 | Rule 3 takes precedence over Rule 1.| 30 | "I'm sorry, Dave. I'm afraid I can't do that." |
 | Rule 3 takes precedence over Rule 2.| 15 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| User should be able to enter new number and see new results.| Input "3", Submit, then input "4". | Clear results from "3", then return results for "4". |
+| User should be able to enter new number and see new results.| Input "3", submit, then input "4". | Clear results from "3", then return results for "4". |
 
 
 
